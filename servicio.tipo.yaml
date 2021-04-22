@@ -11,3 +11,22 @@ eureka:
         description: Servicio Tipo
         initial-status: UP
 
+# Puerto del servidor
+server:
+  port: 8111
+
+# Configuración del datasource (conexión a base de datos)
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ms-tipos
+    username: admin
+    password: 123456
+# Configuración para JPA
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL94Dialect
+        temp:
+          use_jdbc_metadata_defaults: false
+#      ddl-auto: update
+#    show-sql: true

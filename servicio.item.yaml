@@ -11,3 +11,6 @@ eureka:
         description: Servicio Item
         initial-status: UP
 
+# Puerto del servidor
+server:
+  port: 8555
