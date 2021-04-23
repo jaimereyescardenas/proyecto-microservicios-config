@@ -14,7 +14,9 @@ eureka:
 # Puerto del servidor
 server:
   port: 8777
+
 # Habilitar Eureka en Ribbon
+default:
   ribbon: 
     ServerListRefreshInterval: 1000
     eureka:
