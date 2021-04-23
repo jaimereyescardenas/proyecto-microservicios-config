@@ -16,12 +16,11 @@ server:
   port: 8777
 
 # Configurar Eureka en Ribbon
-default:
+servicio.item:
   ribbon: 
-    listOfServers: http://localhost:8555, http://localhost:8666
     ServerListRefreshInterval: 1000
     eureka:
-      enabled: false
+      enabled: true
 
 # Configuración del datasource (conexión a base de datos)
 spring:
