@@ -16,8 +16,9 @@ server:
   port: 8777
 
 # Configurar Eureka en Ribbon
-servicio.item:
+servicio-item:
   ribbon: 
+    listOfServers: http://localhost:8555, http://localhost:8666
     ServerListRefreshInterval: 1000
     eureka:
       enabled: true
