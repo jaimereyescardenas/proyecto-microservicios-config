@@ -21,7 +21,7 @@ default:
     ServerListRefreshInterval: 1000
     eureka:
       enabled: true
-      listOfServers: http://localhost:8777, http://localhost:8778
+      listOfServers: http://localhost:8555, http://localhost:8666
 
 # Configuración del datasource (conexión a base de datos)
 spring:
